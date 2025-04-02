@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script type="module">
+       import {Carte} from './Carte.js'
+
+       let carte1= new Carte('Poezii','Mihai Eminescu','Polirom',2007,25);
+       let carte2= new Carte('Nuvele','Ioan Slavici','All',2010,20);
+       let carte3=new Carte('Ion','Liviu Rebreanu','Univers',2015,35);
+ 
+       let info=carte1.afiseazaInfo();
+       let demo=document.getElementById('demo');
+       demo.innerHTML=info;
+    //    carte1.afiseazaInfo();
+    //    carte2.afiseazaInfo();
+    //    carte3.afiseazaInfo();
+    </script>
+</body>
+</html>
